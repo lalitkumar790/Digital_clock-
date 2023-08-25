@@ -1,0 +1,48 @@
+/* styles.css */
+
+.clock {
+    --clock-size: 360px;
+    width: var(--clock-size);
+    height: var(--clock-size);
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.clock .seconds,
+.clock .minutes,
+.clock .hour {
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background: #fff;
+    top: 50%;
+    transform-origin: 100%;
+    transform: translate(-100%, -50%);
+}
+
+.clock .minutes {
+    height: 4px;
+    background: #fff;
+    top: 49.5%;
+    transform: translate(-100%, -49.5%);
+}
+
+.clock .hour {
+    height: 6px;
+    background: #fff;
+    top: 49%;
+    transform: translate(-100%, -49%);
+}
+
+.clock .minute {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    font-size: 2rem;
+    color: #fff;
+}
